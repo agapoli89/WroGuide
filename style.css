@@ -1,0 +1,181 @@
+body
+{
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/tlo.png");
+	color: #efefef;
+    font-family: 'Lato', sans-serif;
+    font-size: 17px;
+}
+
+.row
+{
+	text-align: center;
+}
+
+.bg-pozycje
+{
+	background-color: #356B8C;
+}
+
+.bg-pozycja
+{
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 20px;
+	border-right: 1px dashed #0a2b42;
+}
+
+.lista > li:first-child
+{
+	border-left: 1px dashed #0a2b42;
+}
+
+.lista > li:last-child
+{
+	background-color: #F26A1B;
+}
+
+.cytat
+{
+	text-align: right;
+}
+
+.zaproszenie
+{
+	font-family: 'Caveat', cursive;
+	color: #F24F13;
+	font-size: 30px;
+	margin-top: 60px;
+	text-align: left;
+	transform: rotate(-10deg);
+}
+
+.ossolineum
+{
+	opacity: 0.9;
+}
+
+.ossolineum:hover
+{
+	opacity: 1;
+}
+
+@media(max-width:991px)
+{
+	.ossolineum
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+}
+
+.hide
+{
+	display: none;
+}
+
+.sekcja
+{
+	background-color: #356B8C;
+}
+
+
+.tile1
+{
+	margin: 10px;
+	/*width: 230px;*/
+	/*height: 142px;*/
+	background-color: #595958;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.tile1:hover
+{
+	background-color: #484847;
+}
+
+a.tilelink
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	/*width: 230px;*/
+	/*height: 142px;*/
+}
+
+a.tilelinkhtml5
+{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.tile3
+{
+	/*width: 230px;*/
+	margin: 10px;
+	/*height: 142px;*/
+	background-color: #F26A1B;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.tile3:hover
+{
+	background-color: #e15a0a;
+}
+
+@media(max-width: 991px)
+{
+	.icon-right-bold:before
+	{
+		transform: rotate(90deg);
+	}
+}
+
+@media(max-width: 991px)
+{
+	.formularz
+	{
+		padding-top: 20px;
+	}
+}
+
+@media(min-width: 576px)
+{
+	.form-control-moje
+	{
+		width: 70%;
+		margin: auto;
+	}
+}
+
+.btn-buttonstyl
+{
+	color: #fff;
+    background-color: #F26A1B;
+    border-color: #F26A1B;
+}	
+	
+footer
+{
+	width: 100%;
+	/*background-color: #356B8C;
+	position: fixed;
+	bottom: 0;
+	left: 0; */
+	text-align: center;
+	/* Background pattern from Toptal Subtle Patterns */
+	background-image: url("img/tlo.png");
+}
+
+#info
+{
+	margin-left: auto;
+	margin-right: auto;
+}

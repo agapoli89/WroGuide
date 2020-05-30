@@ -1,0 +1,8 @@
+
+.icon-phone:before { content: '\e800'; } /* '' */
+.icon-gmail:before { content: '\e801'; } /* '' */
+.icon-facebook:before { content: '\e802'; } /* '' */
+.icon-email:before { content: '\e803'; } /* '' */
+.icon-right-bold:before { content: '\e804'; } /* '' */
+.icon-phone-squared:before { content: '\f098'; } /* '' */
+.icon-whatsapp:before { content: '\f232'; } /* '' */
