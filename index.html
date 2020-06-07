@@ -18,10 +18,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
 	
 	<script src="quiz.js" defer></script>
-	
 </head>
 
-<body>
+<body id="top">
 	
 	<header>
 		<div class="container">
@@ -36,31 +35,31 @@
 			</div>
 		</div>
 	</header>	
-		<nav class="navbar navbar-expand-lg navbar-dark bg-pozycje py-0">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-pozycje py-0">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mx-auto lista">
-				  <li class="nav-item bg-pozycja">
-					<a class="nav-link" href="#">O mnie</a>
-				  </li>
-				  <li class="nav-item bg-pozycja">
-					<a class="nav-link" href="#">Co oferuję?</a>
-				  </li>
-				  <li class="nav-item bg-pozycja">
-					<a class="nav-link" href="#">Wrocław</a>
-				  </li>
-				  <li class="nav-item bg-pozycja">
-					<a class="nav-link" href="#">Quiz</a>
-				  </li>
-				  <li class="nav-item bg-pozycja">
-					<a class="nav-link" href="#">Kontakt</a>
-				  </li>
-				</ul>
-			</div>
-		</nav>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mx-auto lista">
+			  <li class="nav-item bg-pozycja">
+				<a class="nav-link" id="o_mniel" href="#">O mnie</a>
+			  </li>
+			  <li class="nav-item bg-pozycja">
+				<a class="nav-link" id="co_oferujel" href="#">Co oferuję?</a>
+			  </li>
+			  <li class="nav-item bg-pozycja">
+				<a class="nav-link" id="wroclawl" href="#">Wrocław</a>
+			  </li>
+			  <li class="nav-item bg-pozycja">
+				<a class="nav-link" id="quizl" href="#">Quiz</a>
+			  </li>
+			  <li class="nav-item bg-pozycja">
+				<a class="nav-link" id="kontaktl" href="#">Kontakt</a>
+			  </li>
+			</ul>
+		</div>
+	</nav>
 		
 	<!-- </header> -->	
 	
@@ -75,7 +74,7 @@
 							<cite>Len&nbsp;Rutledge</cite>
 						</div>
 						<div class="zaproszenie mb-3 mb-md-0">
-							 Zapraszam na wycieczkę! Agnieszka&nbsp;Polińska - przewodniczka po Wrocławiu :)
+							 Zapraszam na wycieczkę! Agnieszka&nbsp;Polińska - przewodniczka po&nbsp;Wrocławiu :)
 						</div>
 					</div>
 			<!--źródło zdjęcia i licencja: https://pl.m.wikipedia.org/wiki/Plik:Turysta_(Tourist)_Wroclaw_dwarf_2018_P01.jpg-->
@@ -88,7 +87,8 @@
 		</section>	
 		
 		<section>
-			<div class="container-fluid sekcja">
+			<div class="container-fluid sekcja anchor">
+				<a id="o_mnie">&nbsp;</a>
 				<div class="row align-items-center py-5">
 					<div class="col-lg-8 offset-lg-2 text-justify pb-3 pb-sm-0">
 						<h2 class="h3 text-center text-lg-left">Kim jestem?</h2>
@@ -102,7 +102,8 @@
 				
 			</div>
 			
-			<div class="container">
+			<div class="container anchor">
+				<a id="co_oferuje">&nbsp;</a>
 				<div class="row py-5">
 					<div class="col-md-8 offset-md-2 text-justify">
 						<h2 class="h3">Co oferuję?</h2>
@@ -115,7 +116,8 @@
 				</div>
 			</div>
 			
-			<div class="container-fluid sekcja">
+			<div class="container-fluid sekcja anchor">
+				<a id="wroclaw">&nbsp;</a>
 				<div class="row py-5">
 					<div class="col-lg-8 offset-lg-2 text-justify">
 						<h2 class="h3 text-center text-lg-left mb-3 mb-lg-1">Wrocław</h2>
@@ -128,7 +130,8 @@
 				</div>		
 			</div>
 			
-			<div class="container">
+			<div class="container anchor">
+				<a id="quiz">&nbsp;</a>
 				<div class="row py-5">
 					<div class="col-lg-8 offset-lg-2 text-justify" id="quiz-cnt">
 						<div>
@@ -306,8 +309,8 @@
 				</div>
 			</div>
 			
-			<div class="container-fluid sekcja">
-			
+			<div class="container-fluid sekcja anchor">
+				<a id="kontakt">&nbsp;</a>
 				<div class="row py-5">
 					<div class="col-lg-6">
 						<h4>Kontakt ze mną:</h4>
@@ -327,7 +330,7 @@
 								</a>
 							</div>
 							<div class="col-md-6 px-lg-0">
-								<a href="#" class="tilelinkhtml5">
+								<a href="http://www.facebook.com/" class="tilelinkhtml5">
 									<div class="tile1">
 										<i class="icon-facebook"></i><br />Facebook
 									</div>
@@ -367,21 +370,46 @@
 			
 	</main>		
 			
-			<footer>
-				<div id="info">Agnieszka Polińska - Przewodnik po Wrocławiu &copy; 2020 Wszelkie prawa zastrzeżone.</div>
-			</footer>
+	<footer>
+		<div id="info">Agnieszka Polińska - Przewodnik po Wrocławiu &copy; 2020 Wszelkie prawa zastrzeżone.</div>
+	</footer>
 		
-		
+	<a href="#" class="top_arrow_box" id="arrow"><img src="img/top_arrow.png" class="top_arrow"></a>
 	
-	
-	<!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
-	
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	<script src="jquery.scrollTo.min.js"></script>
 	
+	<script>
+	//schowaj menu
+	$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+	});
+	
+	//pokaż strzałkę podczas przewiania
+	$(window).scroll(function()
+	{
+		if($(this).scrollTop()>1) $('.top_arrow_box').fadeIn();
+		else $('.top_arrow_box').fadeOut();
+	}
+	);
+	
+	//przewijanie z animacją
+	jQuery(function($)
+	{
+		$.scrollTo(0);
+		$('#o_mniel').click(function() {$.scrollTo($('#o_mnie'), 1000);});
+		$('#co_oferujel').click(function() {$.scrollTo($('#co_oferuje'), 1000);});
+		$('#wroclawl').click(function() {$.scrollTo($('#wroclaw'), 1000);});
+		$('#quizl').click(function() {$.scrollTo($('#quiz'), 1000);});
+		$('#kontaktl').click(function() {$.scrollTo($('#kontakt'), 1000);});
+		$('#arrow').click(function() {$.scrollTo($('#top'), 1000);});
+	}
+	);
+	
+	</script>
 	
 </body>
 </html>

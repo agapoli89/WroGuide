@@ -43,6 +43,31 @@ body
 	background-color: #F26A1B;
 }
 
+@media(min-width:992px)
+{
+.anchor > a
+	{
+		position: absolute;
+		left: 0px;
+		top: -60px;
+	}
+}
+
+@media(max-width:991px)
+{
+.anchor > a
+	{
+		position: absolute;
+		left: 0px;
+		top: -40px;
+	}
+}
+
+.anchor 
+{
+	position: relative;
+}
+
 .cytat
 {
 	text-align: right;
@@ -56,6 +81,15 @@ body
 	margin-top: 60px;
 	text-align: left;
 	transform: rotate(-10deg);
+}
+
+@media(min-width:768px)
+{
+	.zaproszenie
+	{
+		position: relative;
+		left: -10%;
+	}
 }
 
 .ossolineum
@@ -98,6 +132,7 @@ body
 	background-color: #595958;
 	text-align: center;
 	padding-bottom: 20px;
+	border-radius: 5px;
 }
 
 .tile1:hover
@@ -128,6 +163,7 @@ a.tilelinkhtml5
 	background-color: #F26A1B;
 	text-align: center;
 	padding-bottom: 20px;
+	border-radius: 5px;
 }
 
 .tile3:hover
@@ -183,4 +219,20 @@ footer
 {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.top_arrow_box
+{
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	text-align: right;
+	display: none;
+}
+
+.top_arrow
+{
+	height: 5vw;
+	width: 5vw;
 }
