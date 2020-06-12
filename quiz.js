@@ -95,10 +95,10 @@ function summery(){
 		scoreCom.innerText = "Zdecydowanie przyda Ci się wycieszka po Wrocławiu z przewodnikiem :) Zapraszam!";
 		break;
 		case (score==3):
-		scoreCom.innerText = "Widać, że masz sporą wiedzę o Wrocławiu, ale wciąż znajdzie się pare ciekawostek, które mogą Cię zainteresować :)";
+		scoreCom.innerText = "Widać, że masz sporą wiedzę o Wrocławiu, ale wciąż znajdzie się parę ciekawostek, które mogą Cię zainteresować. Zapraszam na wyceczkę!";
 		break;
 		case (score>=4):
-		scoreCom.innerText = "Gratulacje! Twoja wiedza o Wrocławiu jest imponująca!"
+		scoreCom.innerText = "Gratulacje! Twoja wiedza o Wrocławiu jest imponująca! Może sam powinieneś zastanowić się nad zrobieniem kursu na przewodnika?"
 	}
 	btn[++counter].addEventListener("click",again);
 }

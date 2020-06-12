@@ -92,19 +92,19 @@ body
 	}
 }
 
-.ossolineum
+.photo_efect
 {
 	opacity: 0.9;
 }
 
-.ossolineum:hover
+.photo_efect:hover
 {
 	opacity: 1;
 }
 
 @media(max-width:991px)
 {
-	.ossolineum
+	.photo_efect
 	{
 		display: block;
 		margin-left: auto;
