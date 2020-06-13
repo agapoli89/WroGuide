@@ -18,6 +18,7 @@ function changeSlide(){
 	
 	quiz[counter].nextElementSibling.classList.remove("hide");
 	counter++; //counter + 1
+	$.scrollTo($('#quiztwo'), 500);
 	
 	btn[counter].addEventListener("click",checkAnswer); 
 	//nasłuchiwanie na wywołanie funkcji checkAnswer, które nastąpi po kliknięciu
@@ -85,6 +86,7 @@ function summery(){
 	console.log("wywołano summery()");
 	console.log("S_counter: " + counter);
 	//changeSlide();
+	$.scrollTo($('#quiztwo'), 500);
 	quiz[quiz.length-2].classList.add("hide");
 	quiz[quiz.length-1].classList.remove("hide");
 	scoreHolder = document.querySelector(".score");
@@ -129,5 +131,6 @@ function again() {
 		}
 		
 		counter=0;	
+		score=0;
 		start();		
 }

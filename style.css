@@ -30,12 +30,22 @@ body
 	padding-left: 30px;
 	padding-right: 30px;
 	font-size: 20px;
-	border-right: 1px dashed #0a2b42;
 }
 
-.lista > li:first-child
+@media(min-width:992px)
 {
-	border-left: 1px dashed #0a2b42;
+.bg-pozycja
+	{
+		border-right: 1px dashed #0a2b42;
+	}
+}
+
+@media(min-width:992px)
+{
+.lista > li:first-child
+	{
+		border-left: 1px dashed #0a2b42;
+	}
 }
 
 .lista > li:last-child
@@ -51,7 +61,7 @@ body
 		left: 0px;
 		top: -60px;
 	}
-}
+} 
 
 @media(max-width:991px)
 {
@@ -59,7 +69,7 @@ body
 	{
 		position: absolute;
 		left: 0px;
-		top: -40px;
+		top: -370px;
 	}
 }
 
@@ -187,6 +197,15 @@ a.tilelinkhtml5
 	}
 }
 
+@media(max-width: 575px)
+{
+	.formularz
+	{
+		margin-right: 5vw;
+		margin-left: 5vw;
+	}
+}
+
 @media(min-width: 576px)
 {
 	.form-control-moje
@@ -224,7 +243,8 @@ footer
 .top_arrow_box
 {
 	position: fixed;
-	bottom: 0;
+	bottom: 29px;
+	/*bottom: 0; widok docelowy*/
 	right: 0;
 	z-index: 1;
 	text-align: right;
