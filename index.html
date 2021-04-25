@@ -488,8 +488,18 @@
 								<textarea class="form-control form-control-moje" id="wiadomosc" rows="4"
 									placeholder="Zapraszam do kontaktu :)" required></textarea>
 								<div class="invalid-feedback">Wpisz wiadomość :)</div>
+								<div class="recaptcha-info mt-2">
+									This site is protected by reCAPTCHA and the Google
+									<a href="https://policies.google.com/privacy" class="recaptcha-link">Privacy
+										Policy</a> and
+									<a href="https://policies.google.com/terms" class="recaptcha-link">Terms of
+										Service</a> apply.
+								</div>
 							</div>
-							<button type="submit" class="btn btn-buttonstyl px-4">Wyślij</button>
+							<button type="submit" class="btn btn-buttonstyl px-4 g-recaptcha"
+								data-sitekey="6Lda77gaAAAAAHwEfqlvaJcgvA1ZqY9j5ixpjVV5" data-callback='onSubmit'
+								data-action='submit'>Wyślij
+							</button>
 						</form>
 					</div>
 				</div>
@@ -507,6 +517,7 @@
 			alt="back-to-the-start"></a>
 
 
+	<script src="https://www.google.com/recaptcha/api.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
 		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
@@ -553,6 +564,11 @@
 				$.scrollTo($('#formularz'), 500);
 			});
 		});
+
+		//recaptcha
+		function onSubmit(token) {
+			document.getElementById("demo-form").submit();
+		}
 	</script>
 
 </body>
