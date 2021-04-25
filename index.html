@@ -474,7 +474,7 @@
 						<div class="pb-3">
 							<h4>Formularz</h4>
 						</div>
-						<form action="index.php" method="post">
+						<form action="index.php" method="post" id="contact-form">
 							<div class="form-group">
 								<label for="email">Adres e-mail</label>
 								<input type="email" class="form-control form-control-moje" id="email"
@@ -497,8 +497,8 @@
 								</div>
 							</div>
 							<button type="submit" class="btn btn-buttonstyl px-4 g-recaptcha"
-								data-sitekey="6Lda77gaAAAAAHwEfqlvaJcgvA1ZqY9j5ixpjVV5" data-callback='onSubmit'
-								data-action='submit'>Wyślij
+								data-sitekey="6Lda77gaAAAAAHwEfqlvaJcgvA1ZqY9j5ixpjVV5" data-callback="onSubmit"
+								data-action="submit">Wyślij
 							</button>
 						</form>
 					</div>
@@ -567,7 +567,7 @@
 
 		//recaptcha
 		function onSubmit(token) {
-			document.getElementById("demo-form").submit();
+			document.getElementById("contact-form").submit();
 		}
 	</script>
 
