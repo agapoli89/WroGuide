@@ -260,3 +260,28 @@ footer
 	height: 5vw;
 	width: 5vw;
 }
+
+.grecaptcha-badge 
+{ 
+	visibility: hidden; 
+}
+
+.recaptcha-info 
+{
+	font-size: .8rem; 
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	color: rgba(211, 211, 211, 0.61);
+}
+
+.recaptcha-link 
+{
+	color: rgba(117, 161, 243, 0.993);
+}
+
+.recaptcha-link:hover 
+{
+	color: rgba(117, 161, 243, 0.993);
+	text-decoration: none;
+}
